@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {render} from "react-dom";
+import AddNewTask from "./components/testCo";
 
+
+// render(<AddNewTask/>,document.getElementById("root"));
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <AddNewTask/>
   </React.StrictMode>,
   document.getElementById('root')
 );
